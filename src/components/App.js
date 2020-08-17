@@ -42,6 +42,9 @@ export default function App(props) {
       {/* <Route exact path='/' component={Home} /> */}
       {/* <Route exact path='/' render={() => <Home foo='bar' />} /> */}
 
+      <Switch>
+        
+      </Switch>
       <Route exact path='/'>
         <Home foo='bar' />
       </Route>
