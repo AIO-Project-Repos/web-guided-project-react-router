@@ -9,7 +9,7 @@ export default function Item(props) {
   const { items } = props
   const { id } = useParams()
   const { url, path } = useRouteMatch()
-  
+
   console.log(items)
   console.log(id)
 
@@ -42,8 +42,12 @@ export default function Item(props) {
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
       {/* These Routes should render <ItemDetails /> */}
-      <Route path={`/items-list/:id/description`}>
-        <ItemDetails text={item.description}/>
+      <Route path={`${path}/description`}>
+        <ItemDetails text={item.description} />
+      </Route>
+
+      <Route path={`${path}/shipping`}>
+        <ItemDetails text={item.shipping} />
       </Route>
 
       {/* 👉 STEP 10 - Shorten paths and urls with `useRouteMatch` hook */}
