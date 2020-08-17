@@ -3,7 +3,7 @@
 export default [
   {
     name: 'Reel Viewer',
-    id: 0,
+    id: 110,
     price: 29.95,
     imageUrl:
       'https://www.uncommongoods.com/images/items/47400/47435_1_360px.jpg',
@@ -14,7 +14,7 @@ export default [
   },
   {
     name: 'Mathematical Glasses - Set of 4',
-    id: 1,
+    id: 51,
     price: 38.0,
     imageUrl:
       'https://www.uncommongoods.com/images/items/46700/46720_1_360px.jpg',
