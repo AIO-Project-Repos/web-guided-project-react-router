@@ -1,6 +1,6 @@
 import React from 'react'
 // We'll need quite a few imports from react-router-dom
-import { useParams, NavLink } from 'react-router-dom'
+import { useParams, NavLink, useRouteMatch } from 'react-router-dom'
 
 import ItemDetails from './ItemDetails'
 
@@ -33,8 +33,8 @@ export default function Item(props) {
 
       <nav className='item-sub-nav'>
         {/* 👉 STEP 8 - Here go the NavLinks to `<current url>/shipping` and `<current url>/description` */}
-        <NavLink>shipping</NavLink>
-        <NavLink>description</NavLink>
+        <NavLink to={}>shipping</NavLink>
+        <NavLink to={}>description</NavLink>
       </nav>
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
