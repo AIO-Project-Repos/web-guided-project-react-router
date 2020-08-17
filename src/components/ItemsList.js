@@ -6,6 +6,7 @@ export default function ItemsList(props) {
   const { items } = props
 
   // We'll grab the current URL using the hook
+  const { url } = useRouteMatch() // it has more stuff besides url
 
   return (
     <div className='items-list-wrapper'>
