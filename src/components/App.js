@@ -43,19 +43,18 @@ export default function App(props) {
       {/* <Route exact path='/' render={() => <Home foo='bar' />} /> */}
 
       <Switch>
-        
+        <Route path='/items-list/:id'>
+          <Item />
+        </Route>
+
+        <Route path='/items-list'>
+          <ItemsList items={stock} />
+        </Route>
+
+        <Route path='/'>
+          <Home foo='bar' />
+        </Route>
       </Switch>
-      <Route exact path='/'>
-        <Home foo='bar' />
-      </Route>
-
-      <Route path='/items-list'>
-        <ItemsList items={stock} />
-      </Route>
-
-      <Route path='/items-list/:id'>
-        <Item />
-      </Route>
     </div>
   )
 }
