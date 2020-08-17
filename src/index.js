@@ -8,7 +8,7 @@ import App from './components/App'
 import './styles.less'
 
 // 👉 STEP 1 - Import React Router's Router
-import {} from 'rerodo'
+import { Router } from 'react-router-dom'
 
 render(
   // Wrap the <App /> in a provider
