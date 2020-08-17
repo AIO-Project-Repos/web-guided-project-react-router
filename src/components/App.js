@@ -50,7 +50,7 @@ export default function App(props) {
         <ItemsList items={stock} />
       </Route>
 
-      <Route path=''>
+      <Route path='/items-list/:banana'>
         <Item />
       </Route>
     </div>
