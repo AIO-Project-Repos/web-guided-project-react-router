@@ -8,9 +8,10 @@ export default function Item(props) {
   // We get ALL items through props. We'll use the URL to find out which item is the one to show.
   const { items } = props
   
-  const  { id } = useParams()
-
-  console.log(params)
+  const { id } = useParams()
+  
+  console.log(items)
+  console.log(id)
 
   // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:itemID)
   // Beware! The ids are integers, whereas URL parameters are strings.
