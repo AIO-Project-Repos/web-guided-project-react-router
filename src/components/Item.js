@@ -8,7 +8,7 @@ export default function Item(props) {
   // We get ALL items through props. We'll use the URL to find out which item is the one to show.
   const { items } = props
   const { id } = useParams()
-  const { url } = useRouteMatch()
+  const { url, path } = useRouteMatch()
   
   console.log(items)
   console.log(id)
@@ -42,7 +42,7 @@ export default function Item(props) {
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
       {/* These Routes should render <ItemDetails /> */}
-      <Route path={`current PATH`}>
+      <Route path={`/items-list/:id/description`}>
         <ItemDetails text={item.description}/>
       </Route>
 
