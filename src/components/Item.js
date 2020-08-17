@@ -7,6 +7,7 @@ import ItemDetails from './ItemDetails'
 export default function Item(props) {
   // We get ALL items through props. We'll use the URL to find out which item is the one to show.
   const { items } = props
+  console.log(items)
 
   // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:itemID)
   // Beware! The ids are integers, whereas URL parameters are strings.
