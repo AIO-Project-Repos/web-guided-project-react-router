@@ -18,7 +18,7 @@ export default function Item(props) {
   // Beware! The JSX is expecting 'item' to exist instantly!
   // we use this hook to grab they dynamic parts of the path (:itemID).
 
-  const item = items.find(it => it.id == id) || {}
+  const item = items.find(it => it.id == id) || id
 
   return (
     <div className='item-wrapper'>
