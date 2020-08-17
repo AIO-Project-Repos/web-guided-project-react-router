@@ -39,7 +39,7 @@ export default function App(props) {
       </Route>
 
       <Route path='/items-list'>
-        
+        <ItemsList />
       </Route>
     </div>
   )
