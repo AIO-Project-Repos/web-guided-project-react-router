@@ -22,6 +22,11 @@ export default function App(props) {
     fetchStock().then(res => setStock(res.data))
   }, [])
 
+  useEffect(() => {
+    // if authed navigate here
+    // otherwise there
+  }, [])
+
   return (
     <div className='App'>
       <nav>
