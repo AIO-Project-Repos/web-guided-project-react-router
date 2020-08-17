@@ -12,7 +12,7 @@ export default function Home() {
 
   const routeToShop = () => {
     // use history and its push method to navigate imperatively
-    history.push('/')
+    history.push('/items-list')
   }
 
   return (
