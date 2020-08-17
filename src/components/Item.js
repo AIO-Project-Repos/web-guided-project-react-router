@@ -20,7 +20,7 @@ export default function Item(props) {
 
   const item = items.find(it => it.id == id)
 
-  
+  if (!item) return '... loading your item'
 
   return (
     <div className='item-wrapper'>
