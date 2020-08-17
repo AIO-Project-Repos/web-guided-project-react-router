@@ -8,6 +8,7 @@ export default function Item(props) {
   // We get ALL items through props. We'll use the URL to find out which item is the one to show.
   const { items } = props
   const { id } = useParams()
+  const { url } = useRouteMatch()
   
   console.log(items)
   console.log(id)
@@ -33,8 +34,8 @@ export default function Item(props) {
 
       <nav className='item-sub-nav'>
         {/* 👉 STEP 8 - Here go the NavLinks to `<current url>/shipping` and `<current url>/description` */}
-        <NavLink to={}>shipping</NavLink>
-        <NavLink to={}>description</NavLink>
+        <NavLink to={`${url}/shipping`}>shipping</NavLink>
+        <NavLink to={`${url}/description`}>description</NavLink>
       </nav>
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
